@@ -1,0 +1,285 @@
+.signup {
+  width: min(100%, 390px);
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 0 22px calc(12px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.status-bar {
+  display: block;
+  width: min(100vw, 390px);
+  max-width: none;
+  height: auto;
+  margin-left: calc(50% - min(50vw, 195px));
+}
+
+.back-button {
+  width: 32px;
+  height: 32px;
+  margin: 6px 0 18px -6px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #ff5a1f;
+  cursor: pointer;
+}
+
+.signup h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.signup-copy {
+  margin: 0 0 28px;
+  max-width: 30ch;
+  color: #8d8d8d;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.phone-field {
+  height: 52px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: #f3f3f3;
+}
+
+.country-code {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.caret {
+  width: 2px;
+  height: 20px;
+  margin-left: 6px;
+  background: #ff5a1f;
+}
+
+.field-divider {
+  width: 1px;
+  height: 22px;
+  margin: 0 14px 0 12px;
+  background: #d5d5d5;
+}
+
+.phone-digits {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  outline: none;
+}
+
+.phone-digits::placeholder {
+  color: #b0b0b0;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.otp-button {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 22px;
+  border: 0;
+  border-radius: 12px;
+  background: #ff5a1f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.otp-button:active:not(:disabled) {
+  background: #e84d16;
+}
+
+.otp-button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.form-error {
+  margin: 10px 0 0;
+  color: #c2410c;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.legal-copy {
+  margin: 14px 0 0;
+  color: #9a9a9a;
+  font-size: 11px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.legal-copy button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #ff5a1f;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.keypad {
+  margin-top: auto;
+  padding: 18px 2px 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.key {
+  min-height: 62px;
+  padding: 8px 0 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.key:active {
+  background: #f6f6f6;
+}
+
+.key-digit {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.key-letters {
+  min-height: 12px;
+  margin-top: 3px;
+  color: #9b9b9b;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.key-delete {
+  color: #1a1a1a;
+}
+
+.delete-glyph {
+  width: 26px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.otp-boxes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.otp-box {
+  width: 42px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.otp-box input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  caret-color: #ff5a1f;
+}
+
+.otp-box input:focus {
+  outline: none;
+}
+
+.otp-box:focus-within {
+  border-color: #ff5a1f;
+}
+
+.otp-caret {
+  width: 2px;
+  height: 20px;
+  background: #ff5a1f;
+}
+
+.otp-dash {
+  color: #c4c4c4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.resend-copy {
+  margin: 14px 0 0;
+  color: #8d8d8d;
+  font-size: 13px;
+}
+
+.resend-copy span,
+.resend-copy button {
+  color: #ff5a1f;
+}
+
+.resend-copy button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.resend-copy button:disabled {
+  cursor: default;
+}
+
+.otp-footer {
+  margin-top: auto;
+}
+
+.otp-footer .otp-button {
+  margin-top: 0;
+}
+
+.otp-footer .keypad {
+  margin-top: 22px;
+}
